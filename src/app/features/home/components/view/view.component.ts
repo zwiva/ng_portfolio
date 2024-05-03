@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-view',
@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
   templateUrl: './view.component.html',
   styleUrl: './view.component.scss'
 })
-export class ViewComponent {
+export class ViewComponent implements OnInit {
+  saludo: string = 'hola';
+  
 
+  ngOnInit(): void {
+    console.log('saludo -> ', this.saludo);
+
+  }
 }

@@ -7,8 +7,18 @@ export const routes: Routes = [
         loadComponent: () => import('./features/home/components/view/view.component').then(mod => mod.ViewComponent)
     },
     {
-        path: '**',
+        path: 'error-page',
+        title: 'error',
+        loadComponent: () => import('./features/error_page/components/view/view.component').then(mod => mod.ViewComponent)
+    },
+    {
+        path: '',
         pathMatch: 'full',
         redirectTo: 'home'
+    },
+    {
+        path: '**',
+        pathMatch: 'full',
+        redirectTo: 'error-page'
     },
 ];
