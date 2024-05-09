@@ -1,58 +1,129 @@
+// 320px minium
 .component__body {
     height: 100dvh;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     flex-direction: column;
 }
 
-.element {
+.home__body {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 2em;
+}
+
+.my-card__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+.my-card__body--image {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    padding: 3em;
+    background-color: black;
+    border-radius: 100%;
+}
+
+.my-card__image--props {
+    width: 200px;
+}
+
+.my-card__body--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 1.5em;
+}
+
+.mini-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mini-cards__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+
+.mini-card {
+    margin: 1em;
+    padding: 2em 3em;
+    border: 1px solid #9900ff;
+    cursor: pointer;
+    width: 90%;
+}
+
+.home__details {
+    display: flex;
     flex-wrap: wrap;
 }
 
-.texto1 {
-    align-self: center;
-    padding: 2em;
-    margin: 0.75em;
-    box-shadow: 0px 0px 20px 0px #ff00ff;
-    border-radius: 0.5em;
-    width: 250px;
-    height: 250px;
- 
+.mini-card-img {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
+    margin: 2em;
+    padding: 2em;
+    background-color: #43a3fc;
 }
 
-.texto2 {
-    align-self: center;
-    padding: 2em;
-    margin: 0.75em;
-    box-shadow: 0px 0px 20px 0px #001aff;
-    border-radius: 0.5em;
-    width: 250px;
-    height: 250px;
-
+.home__triple {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
 }
 
-.texto3 {
-    align-self: center;
-    padding: 2em;
-    margin: 0.75em;
-    box-shadow: 0px 0px 20px 0px #9900ff;
-    border-radius: 0.5em;
-    width: 250px;
-    height: 250px;
+@media (width > 480px) {
+    .mini-card {
+        width: 70%;
+    }
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+
+@media (width > 768px) {
+
+    .my-card__body {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    .my-card__image--size {
+        width: 300px;
+    }
+
+    .my-card__body--description {
+        text-align: start;
+        width: 60%;
+    }
+
+    .mini-card {
+        width: 45%;
+    }
+
+    .home__details {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .home__triple {
+        flex-wrap: nowrap;
+    }
+}
+
+
+@media (width > 1920px) {
+    .mini-card {
+        width: 30%;
+    }
 }
