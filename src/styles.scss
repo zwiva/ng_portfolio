@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @use './app/styles/reset';
 @use './app/styles/base';
+@use './app/styles/fonts';
+@use './app/styles/utilities';
+@use './app/styles/shared';
 @use './app/styles/general';

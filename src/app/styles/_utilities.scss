@@ -1,0 +1,123 @@
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex-center-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-center-between {
+    display: flex;
+    justify-content: start;
+}
+
+.m {
+    &-0 {
+        margin: 0em;
+    }
+
+    &-05 {
+        margin: 0.5em;
+    }
+
+    &-1 {
+        margin: 1em;
+    }
+
+    &-2 {
+        margin: 2em;
+    }
+
+    &-3 {
+        margin: 3em;
+    }
+}
+
+.mt {
+    &-1 {
+        margin-top: 1em;
+    }
+
+    &-2 {
+        margin-top: 2em;
+    }
+
+    &-3 {
+        margin-top: 3em;
+    }
+}
+
+.mb {
+    &-1 {
+        margin-bottom: 1em;
+    }
+
+    &-2 {
+        margin-bottom: 2em;
+    }
+
+    &-3 {
+        margin-bottom: 3em;
+    }
+}
+
+.mx {
+    &-05 {
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+   
+    &-1 {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    &-2 {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+
+    &-3 {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+}
+
+.my {
+    &-1 {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    &-2 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    &-3 {
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+}
+
+.bg_points--h-line {
+    background-image: url("../../assets/images/point.svg");
+    background-repeat: repeat-x;
+}
+
+.bg_points--all {
+    background-image: url("../../assets/images/point.svg");
+    background-repeat: repeat;
+}
