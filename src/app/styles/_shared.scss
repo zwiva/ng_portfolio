@@ -3,10 +3,14 @@
     max-width: 1080px;
 }
 
+.stack__card--img {
+    width: 50px;
+}
+
 .navbar__shared {
     display: flex;
     justify-content: center;
-    border-bottom: 2px solid #9900ff;
+    border-bottom: 2px solid #5f00ff;
     box-shadow: 0px 0px 25px 0px #7200ff;
 }
 
