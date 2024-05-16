@@ -1,19 +1,15 @@
-.page__width {
-    width: 100%;
-    max-width: 1080px;
-}
+// SHARED: styles for shared elements - just add
 
-.stack__card--img {
-    width: 50px;
+.footer__icon { // icons footer
+    width: 40px;
 }
 
 .navbar__shared {
     display: flex;
     justify-content: center;
     border-bottom: 2px solid #5f00ff;
-    box-shadow: 0px 0px 50px 0px #2900ae;
+    box-shadow: 0px 0px 50px 5px #2900ae;
     background-color: #1a1a1a;
-
 }
 
 .footer__shared {
@@ -21,6 +17,6 @@
     justify-content: center;
     align-items: center;
     border-top: 2px solid #6316ff;
-    box-shadow: 0px 0px 25px 0px #6316ff;
+    box-shadow: 0px 0px 50px 5px #2900ae;
     background-color: #1a1a1a;
 }

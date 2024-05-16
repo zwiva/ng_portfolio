@@ -1,3 +1,5 @@
+// RESET: reset configurations - not editable!
+
 * {
     box-sizing: border-box;
     min-width: 0;
@@ -19,7 +21,7 @@ h6 {
 
 p,
 span {
-    text-wrap: pretty;
+    text-wrap: pretty; // trouble in IOS
 }
 
 

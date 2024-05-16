@@ -1,12 +1,14 @@
+// FONTS: added and modified on demand
+
 /* comfortaa-latin-wght-normal */
-@font-face {
-    font-family: 'Comfortaa Variable';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 300 700;
-    src: url('../../assets/fonts/comfortaa/comfortaa_5.0.18_latin-wght-normal.woff2') format('woff2-variations');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+// @font-face {
+//     font-family: 'Comfortaa Variable';
+//     font-style: normal;
+//     font-display: swap;
+//     font-weight: 300 700;
+//     src: url('../../assets/fonts/comfortaa/comfortaa_5.0.18_latin-wght-normal.woff2') format('woff2-variations');
+//     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// }
 
 /* lexend-latin-wght-normal */
 @font-face {
@@ -19,14 +21,14 @@
 }
 
 /* overpass-latin-wght-normal */
-@font-face {
-    font-family: 'Overpass Variable';
-    font-style: normal;
-    font-display: swap;
-    font-weight: 100 900;
-    src: url('../../assets/fonts/overpass/overpass_5.0.17_latin-wght-normal.woff2') format('woff2-variations');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
+// @font-face {
+//     font-family: 'Overpass Variable';
+//     font-style: normal;
+//     font-display: swap;
+//     font-weight: 100 900;
+//     src: url('../../assets/fonts/overpass/overpass_5.0.17_latin-wght-normal.woff2') format('woff2-variations');
+//     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+// }
 
 /* urbanist-latin-wght-normal */
 @font-face {
@@ -39,9 +41,6 @@
 }
 
 * {
-    // font-family: 'Comfortaa Variable';
-    // font-family: 'Overpass Variable';
-    // font-family: 'Lexend Variable';
     font-size: 1em;
     font-family: 'Urbanist Variable';
     word-spacing: 3px;
@@ -75,7 +74,31 @@
     font-weight: 300;
 }
 
+.text__white {
+    color: #ffffff;
+}
+
+.text__center {
+    text-align: center;
+}
+
 .text__shadow--purple {
     color: #ffffff;
     text-shadow: 4px 4px 6px #5f00ff;
+}
+
+.title__mega--alined {
+    text-align: center;
+}
+
+@media (width > 768px) {
+    .title__mega--alined {
+        text-align: start;
+    }
+}
+
+.available {
+    text-align: center;
+    color: gray;
+    font-style: italic;
 }

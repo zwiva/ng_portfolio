@@ -1,17 +1,15 @@
-<div class="component__body">
+<div class="body__page">
     <app-navbar class="navbar__shared"></app-navbar>
 
-    <main class="home__body page__width">
+    <main class="page page__width">
 
         <!-- my-card -->
         <div class="home__content--my-card">
 
             <div class="home__content--card">
-
                 <div class="my-card__body--image">
                     <img src="./assets/images/computer2.svg" alt="logo" class="my-card__image--props">
                 </div>
-
                 <div class="my-card__body--description">
                     <p style="color: #a2a2a2;">
                         Hi, my name is
@@ -29,9 +27,7 @@
                     </p>
                 </div>
             </div>
-            <div class="home__content--minibar">
 
-            </div>
             <div class="home__content--about">
                 <div class="home__content--about-description">
                     <h2 class="title__mega text__shadow--purple">About me</h2>
@@ -59,28 +55,25 @@
                     </p>
                 </div>
                 <div class="flex-center mx-3">
-                    <img src="./assets/images/pixelme.svg" alt="logo" class="home__content--about-image"
-                        style="width:100%; min-width: 150px;">
+                    <img src="./assets/images/pixelme.svg" alt="logo" class="home__content--about-image" style="">
                 </div>
             </div>
-
         </div>
 
         <!-- features -->
-        <div class="home__content--features flex-center-column mt-3">
+        <div class="home__content--features flex-center-column" id="samples">
 
-            <div class="m-1">
-                <h2 class="title__mega">
+            <div class="m-2">
+                <h2 class="title__mega title__mega--alined">
                     Samples
                 </h2>
             </div>
 
             <div class="flex-center mini-cards__content">
 
-                <div class="mini-card box__shadow--purple">
+                <div class="mini-card ">
                     <h2>element 1</h2>
-                    <div
-                        style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
+                    <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0); align-self: center;">
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat similique ullam
                         fugit
@@ -89,10 +82,9 @@
                         tempora
                         dolore esse deleniti unde!</p>
                 </div>
-                <div class="mini-card box__shadow--purple">
+                <div class="mini-card ">
                     <h2>element 1</h2>
-                    <div
-                        style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
+                    <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0); align-self: center;">
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat similique ullam
                         fugit
@@ -101,10 +93,9 @@
                         tempora
                         dolore esse deleniti unde!</p>
                 </div>
-                <div class="mini-card box__shadow--purple">
+                <div class="mini-card ">
                     <h2>element 1</h2>
-                    <div
-                        style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
+                    <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0); align-self: center;">
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat similique ullam
                         fugit
@@ -113,10 +104,9 @@
                         tempora
                         dolore esse deleniti unde!</p>
                 </div>
-                <div class="mini-card box__shadow--purple">
+                <div class="mini-card ">
                     <h2>element 1</h2>
-                    <div
-                        style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
+                    <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0); align-self: center;">
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat similique ullam
                         fugit
@@ -125,7 +115,8 @@
                         tempora
                         dolore esse deleniti unde!</p>
                 </div>
-                <!-- <div class="mini-card box__shadow--purple">
+                <!--                 
+                <div class="mini-card">
                     <h2>element 1</h2>
                     <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
                     </div>
@@ -136,7 +127,7 @@
                         tempora
                         dolore esse deleniti unde!</p>
                 </div>
-                <div class="mini-card box__shadow--purple">
+                <div class="mini-card">
                     <h2>element 1</h2>
                     <div style="height: 300px; width: 300px;background-color: rgba(48, 2, 91, 0.315); align-self: center;">
                     </div>
@@ -146,7 +137,8 @@
                         quo sunt, temporibus magnam neque error pariatur quod cumque aliquid quidem expedita
                         tempora
                         dolore esse deleniti unde!</p>
-                </div> -->
+                </div> 
+                -->
 
             </div>
 
@@ -155,8 +147,8 @@
         <!-- stack -->
         <div class="home__content--stack">
 
-            <div class="m-1">
-                <h2 class="title__mega" style="color: #ffffff;">
+            <div class="m-2">
+                <h2 class="title__mega title__mega--alined">
                     My stack
                 </h2>
             </div>
@@ -169,41 +161,46 @@
                         </p>
                     </div>
                     <div class="stack__body--content">
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/html-5-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                HTML
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/html-5-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    HTML
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/css-3-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    CSS
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/js-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    JavaScript
+                                </p>
+                            </div>
                         </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/css-3-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                CSS
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/js-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                JavaScript
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/angular-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Angular
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/react-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                React
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/vue-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Vue
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/angular-svgrepo-com.svg" alt=""
+                                    class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Angular
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/react-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    React
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/vue-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Vue
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -243,79 +240,84 @@
                         </p>
                     </div>
                     <div class="stack__body--content">
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/vs-code-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                vscode
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/vs-code-svgrepo-com.svg" alt=""
+                                    class="stack__card--img">
+                                <p class="stack__card--text">
+                                    vscode
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/node-js-svgrepo-com.svg" alt=""
+                                    class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Node
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/docker-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Docker
+                                </p>
+                            </div>
                         </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/node-js-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Node
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/git-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Git
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/jira-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Jira
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/trello-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Trello
+                                </p>
+                            </div>
                         </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/docker-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Docker
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/figma-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Figma
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/ms-excel-svgrepo-com.svg" alt=""
+                                    class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Excel
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/ms-powerpoint-svgrepo-com.svg" alt=""
+                                    class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Powerpoint
+                                </p>
+                            </div>
                         </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/git-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Git
-                            </p>
+                        <div class="flex">
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/Inkscape_logo.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Inkscape
+                                </p>
+                            </div>
+                            <div class="stack__card">
+                                <img src="./assets/images/stack/python-svgrepo-com.svg" alt="" class="stack__card--img">
+                                <p class="stack__card--text">
+                                    Python
+                                </p>
+                            </div>
                         </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/jira-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Jira
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/trello-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Trello
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/figma-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Figma
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/ms-excel-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Excel
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/ms-powerpoint-svgrepo-com.svg" alt=""
-                                class="stack__card--img">
-                            <p class="stack__card--text">
-                                Powerpoint
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/Inkscape_logo.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Inkscape
-                            </p>
-                        </div>
-                        <!-- <div class="stack__card">
-                            <img src="./assets/images/stack/php-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                PHP
-                            </p>
-                        </div>
-                        <div class="stack__card">
-                            <img src="./assets/images/stack/python-svgrepo-com.svg" alt="" class="stack__card--img">
-                            <p class="stack__card--text">
-                                Python
-                            </p>
-                        </div> -->
                     </div>
                 </div>
 

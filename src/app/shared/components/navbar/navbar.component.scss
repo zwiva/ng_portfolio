@@ -4,7 +4,6 @@
 }
 
 .navbar__bg {
-    // background: linear-gradient(45deg, rgb(247, 0, 255), #5900ff);
     padding: 1em 3em;
 }
 
@@ -12,8 +11,15 @@
     color: #adadad;
     text-decoration: none;
     font-weight: 300;
+    font-size: 0.9em;
 }
 
 .navbar__item:hover {
     color: #43a3fc;
+}
+
+@media (width > 768px) {
+    .navbar__item {
+        font-size: 1em;
+    }
 }

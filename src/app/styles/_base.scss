@@ -1,5 +1,30 @@
+// BASE: page structuring, not editable!
+
 body {
     height: fit-content;
     color: #ffffff;
-    background-color: #212121;
+    background-color: #191919;
+}
+
+.body__page {
+    height: 100dvh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 3em;
+}
+
+
+.page__width {
+    width: 100%;
+    max-width: 1080px;
 }
