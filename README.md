@@ -26,8 +26,20 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-----
+---
 
 Create a new feature:
 
 ng g c features/{ newElement }/components/view
+
+---
+
+## XLSX
+
+xlsx:
+https://www.npmjs.com/package/xlsx
+
+file-saver:
+https://www.npmjs.com/package/file-saver
+
+---
