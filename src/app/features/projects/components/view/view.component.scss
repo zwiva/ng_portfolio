@@ -1,0 +1,17 @@
+.projects_body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 60vh;
+  overflow-y: auto;
+}
+
+.projects_body--each {
+  width: 100%;
+}
+
+@media (width > 768px) {
+  .projects_body--each {
+    width: 30%;
+  }
+}
