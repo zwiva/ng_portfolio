@@ -26,18 +26,14 @@ li {
 }
 
 .sample__each {
-  // background-color: red;
   // card
   display: flex;
   flex-direction: column;
   align-self: center;
   border-bottom: 2px solid #5900ffc9;
-  border-right: 2px solid #5900ffc9;
-  // border-radius: 1em;
-  box-shadow: 5px 5px 10px #5900ff67;
+  // border-right: 2px solid #5900ffc9;
+  box-shadow: 0px 15px 5px #5900ff35;
   padding: 1em;
-  // background: radial-gradient(circle, #593dff 0%, #040114 100%);
-  // filter: drop-shadow(0px 0px 140px #4b32c6);
   width: 90%;
 }
 
@@ -54,7 +50,6 @@ li {
 
 .sample__doc-container {
   display: flex;
-  // background-color: #30025b00;
   justify-content: center;
   margin: 1em;
 }
@@ -67,13 +62,12 @@ li {
 .sample__doc-each {
   width: 300px;
   height: 280px;
-  // filter: drop-shadow(0px 0px 140px #3616d6);
 }
 
 @media (width > 768px) {
 
   .sample__each {
-    padding: 3em;
+    padding: 4em 2em;
   }
 
   .sample__each-content {
@@ -90,6 +84,5 @@ li {
   .sample__doc-each {
     width: 480px;
     height: 320px;
-    // filter: drop-shadow(0px 0px 140px #3616d6);
   }
 }

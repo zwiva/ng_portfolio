@@ -3,16 +3,16 @@
 // ------------ box shadows (square shadow) ----------------
 
 .shadow__blue {
-    box-shadow: 0px 0px 20px 0px #46a2e9;
+  box-shadow: 0px 0px 20px 0px #46a2e9;
 }
 
 .shadow__purple {
-    box-shadow: 0px 0px 10px 0px #7200ff;
+  box-shadow: 0px 0px 10px 0px #7200ff;
 }
 
 .box__shadow--purple {
-    box-shadow: 0px 0px 250px #3d00ae;
-    
+  box-shadow: 0px 0px 250px #3d00ae;
+
 }
 
 // ------------ drop shadows (contoured shadow) -----------
@@ -22,99 +22,99 @@
 // ------------ animated bg --------------
 
 .body__page--move::before {
-    content: "";
-    position: absolute; // el padre debe ser relative!
-    inset: 0;
-    background: linear-gradient(170deg, #11072235, #2b007b31, #12072656, #2d008031);
-    animation: bg 40s linear infinite;
-    background-size: 200%;
-    filter: blur(30px);
-    z-index: -1;
+  content: "";
+  position: absolute; // el padre debe ser relative!
+  inset: 0;
+  background: linear-gradient(170deg, #11072235, #2b007b31, #12072656, #2d008031);
+  animation: bg 40s linear infinite;
+  background-size: 200%;
+  filter: blur(30px);
+  z-index: -1;
 }
 
 @keyframes bg {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    0% {
-        background-position: 300% 0;
-    }
+  0% {
+    background-position: 300% 0;
+  }
 }
 
 // ---------- animated frames -----------:
 
 .home__content--minibar-top {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    color: #ffffffcb;
-    padding: 0.5em;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #ffffffcb;
+  padding: 0.5em;
+  position: relative;
 }
 
 .home__content--minibar-top::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(-90deg, #28135056, #3d00ae, #28135056, #3d00aeba);
-    animation: horiz 30s linear reverse infinite;
-    background-size: 200%;
-    filter: blur(20px);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-90deg, #28135056, #3d00ae, #28135056, #3d00aeba);
+  animation: horiz 30s linear reverse infinite;
+  background-size: 200%;
+  filter: blur(20px);
 }
 
 .home__content--minibar-bottom {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    color: #ffffffcb;
-    padding: 0.5em;
-    position: relative;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  color: #ffffffcb;
+  padding: 0.5em;
+  position: relative;
+  margin: 0;
 }
 
 .home__content--minibar-bottom::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, #28135056, #ff00d4, #28135056, #3a01a4ba);
-    animation: horiz 30s linear infinite;
-    background-size: 200%;
-    filter: blur(20px);
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, #28135056, #ff00d4, #28135056, #3a01a4ba);
+  animation: horiz 30s linear infinite;
+  background-size: 200%;
+  filter: blur(20px);
 }
 
 @keyframes horiz {
-    0% {
-        background-position: 0 0;
-    }
+  0% {
+    background-position: 0 0;
+  }
 
-    0% {
-        background-position: 600% 0;
-    }
+  0% {
+    background-position: 600% 0;
+  }
 }
 
 @media (width > 768px) {
-    .home__content--minibar-top {
-        padding: 1em;
-    }
+  .home__content--minibar-top {
+    padding: 1em;
+  }
 
-    .home__content--minibar-bottom {
-        padding: 1em;
-    }
+  .home__content--minibar-bottom {
+    padding: 1em;
+  }
 }
 
 // ------------ dotted bg ------------
 
 .bg_points--h-line {
-    background-image: url("../../assets/images/point.svg");
-    background-repeat: repeat-x;
+  background-image: url("../../assets/images/point.svg");
+  background-repeat: repeat-x;
 }
 
 .bg_points--all {
-    background-image: url("../../assets/images/point.svg");
-    background-repeat: repeat;
+  background-image: url("../../assets/images/point.svg");
+  background-repeat: repeat;
 }
 
 // --------------- clean -----------------
@@ -134,4 +134,8 @@
 // background-color: #0000000f;
 // background: #28135056;
 // box-shadow: 0em 0em 20em#3d00aeaf;
+// background: radial-gradient(circle, #593dff 0%, #040114 100%);
+// filter: drop-shadow(0px 0px 140px #4b32c6);
+// filter: drop-shadow(0px 0px 140px #3616d6);
+
 //---------------- clean -----------------
