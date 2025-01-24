@@ -151,3 +151,17 @@
         font-weight: 900;
     }
 }
+
+.section__title {
+  text-align: start;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+@media (width > 1080px) {
+  .section__title {
+    width: 100%;
+  }
+}

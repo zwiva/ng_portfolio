@@ -11,4 +11,8 @@ import { FooterComponent } from '../../../../shared/components/footer/footer.com
 })
 export class ViewComponent {
 
+  projects: any = [
+    {}
+  ]
+
 }

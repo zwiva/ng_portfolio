@@ -1,3 +1,9 @@
+p,
+li {
+  margin: 0.25em;
+  color: #dadada;
+}
+
 .projects_body {
   display: flex;
   justify-content: center;
@@ -8,10 +14,13 @@
 
 .projects_body--each {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
 
 @media (width > 768px) {
   .projects_body--each {
-    width: 30%;
+    width: 40%;
   }
 }

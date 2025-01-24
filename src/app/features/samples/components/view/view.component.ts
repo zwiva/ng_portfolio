@@ -10,5 +10,7 @@ import { FooterComponent } from '../../../../shared/components/footer/footer.com
   styleUrl: './view.component.scss'
 })
 export class ViewComponent {
-
+  samples: any = [
+    {}
+  ]
 }
