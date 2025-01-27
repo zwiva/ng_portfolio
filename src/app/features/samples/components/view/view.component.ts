@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Pipe } from '@angular/core';
 import { NavbarComponent } from '../../../../shared/components/navbar/navbar.component';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
+import { NgFor } from '@angular/common';
+import { SafeUrlPipe } from '../../../../shared/pipes/safeUrl/safe-url.pipe';
 
 @Component({
   selector: 'app-view',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, NgFor, SafeUrlPipe],
   templateUrl: './view.component.html',
   styleUrl: './view.component.scss'
 })
@@ -88,13 +90,6 @@ export class ViewComponent implements OnInit {
   ]
 
   ngOnInit() {
-    console.log('ejecuta init');
-    
-
   }
-
-
-
-
 
 }

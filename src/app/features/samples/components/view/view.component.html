@@ -15,306 +15,35 @@
 
       <!-- samples -->
       <div class="sample__body-content">
-
-        <!-- 🍉 sample informe 🍉 -->
-        <div class="sample__each">
-
-          <h2 class="sample__title">Informe descargable uso plataforma</h2>
-
+        <div class="sample__each" *ngFor="let sample of samples; let i = index">
+          <h2 class="sample__title">{{sample.title}}</h2>
           <div class="sample__each-content">
-
             <div class="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/1JjGT8M6FzzK45WqtT3tMvLyTRTQVOP0O/preview"
-                class="sample__doc-each"></iframe>
+              <iframe [src]="sample.iframeSrc | safeUrl" class="sample__doc-each" allow="autoplay"></iframe>
             </div>
-
-            <!-- esp -->
             <div class="sample__doc-description">
-
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo front para sección de descarga de informe que resume uso de plataforma. Sin librería para
-                gráfico de barras.
-              </p>
+              <p><span class="text__blue">Descripción: </span>{{sample.description}}</p>
               <div>
                 <p class="text__blue">
                   Características:
                 </p>
                 <ul>
-                  <li>
-                    Grafico svg con JS.
-                  </li>
-                  <li>
-                    Implementacion de llamados a api interna.
-                  </li>
-                  <li>
-                    Descarga de archivo con extension pdf.
-                  </li>
-                  <li>
-                    Cantidad ilimitada de páginas e identificacion de recursos no completados.
-                  </li>
-                </ul>
-              </div>
-
-              <p>
-                <span class="text__blue">Año: </span>
-                <span>2024</span>
-              </p>
-
-              <p>
-                <span class="text__blue">Tech: </span>
-                <span>React</span>
-              </p>
-
-
-            </div>
-          </div>
-
-        </div>
-
-        <!-- sample webinars -->
-        <div class="sample__each">
-
-          <h2 class="sample__title">Webinars creator / Creador de webinars</h2>
-
-          <div class="sample__each-content">
-
-            <div class="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/1IIgDDSh6-c_Lfk7_2qsw6jbIMax27LXq/preview"
-                class="sample__doc-each"></iframe>
-            </div>
-
-            <!-- esp -->
-            <div class="sample__doc-description">
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo front para sección para agendamiento y envío de invitaciones personalizadas a webinars
-                (reuniones con grupos grandes de potenciales clientes) con Angular.
-              </p>
-              <div>
-                <p class="text__blue">
-                  Características:
-                </p>
-                <ul>
-                  <li>
-                    Implementacion de llamados a api interna
-                  </li>
-                  <li>
-                    Formularios con regex para identificar emails y rechazar (e indicar) incorrectos
-                  </li>
-                  <li>
-                    Previsualización mensaje
+                  <li *ngFor="let feature of sample.features">
+                    {{feature}}
                   </li>
                 </ul>
               </div>
               <p>
                 <span class="text__blue">Año: </span>
-                <span>2023</span>
+                <span>{{sample.year}}</span>
               </p>
               <p>
                 <span class="text__blue">Tech: </span>
-                <span>Angular</span>
+                <span>{{sample.tech}}</span>
               </p>
             </div>
           </div>
         </div>
-
-        <!-- sample informes WIP -->
-        <div class="sample__each">
-
-          <h2 class="sample__title">Generador informes automatizados pdf</h2>
-
-          <div class="sample__each-content">
-
-            <div sclass="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/1RabPu5KmlFgm7ux1179hyLeY9x6iXkxs/preview"
-                class="sample__doc-each"></iframe>
-            </div>
-
-            <!-- esp -->
-            <div class="sample__doc-description">
-
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo frontend para la creación y descarga en pdf de informes con desempeño anual de escuelas. Se
-                crean tablas y gráficos (torta, barras y bloxplot) sin librerías.
-              </p>
-              <div>
-                <p class="text__blue">
-                  Características:
-                </p>
-                <ul>
-                  <li>
-                    Implementacion de llamados a api interna
-                  </li>
-                  <li>
-                    Formularios con regex para identificar emails y rechazar (e indicar) incorrectos
-                  </li>
-                  <li>
-                    Previsualización mensaje
-                  </li>
-                </ul>
-              </div>
-              <p>
-                <span class="text__blue">Año: </span>
-                <span>2022</span>
-              </p>
-              <p>
-                <span class="text__blue">Tech: </span>
-                <span>Angular</span>
-              </p>
-
-
-            </div>
-          </div>
-
-        </div>
-
-        <!-- sample seguimiento escuelas-->
-        <div class="sample__each">
-
-          <h2 class="sample__title">Seguimiento escuelas</h2>
-
-          <div class="sample__each-content">
-
-            <div class="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/14wokzwJEVzUvxLLnWJo5QrsfdXDiHTrp/preview"
-                class="sample__doc-each"></iframe>
-            </div>
-
-            <!-- esp -->
-            <div class="sample__doc-description">
-
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo front para la creacion de sección de seguimiento de escuelas.
-              </p>
-              <div>
-                <p class="text__blue">
-                  Características:
-                </p>
-                <ul>
-                  <li>
-                    Implementacion de llamados a api interna
-                  </li>
-                  <li>
-                    Subsección para ver tabla con listas de escuelas.
-                  </li>
-                  <li>
-                    Subsección para registrar interacciones establecidas con usuarios administrativos.
-                  </li>
-                  <li>
-                    Subsección para registrar interacciones establecidas con usuarios docentes.
-                  </li>
-                </ul>
-              </div>
-              <p>
-                <span class="text__blue">Año: </span>
-                <span>2021 - 2022</span>
-              </p>
-              <p>
-                <span class="text__blue">Tech: </span>
-                <span>Angular</span>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- sample mensajes plataforma WIP-->
-        <div class="sample__each ">
-
-          <h2 class="sample__title">Mensajes a traves de plataforma</h2>
-
-          <div class="sample__each-content">
-
-            <div class="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/1DANfauxgDKKJGH0paXmbeYIlQadBzyMb/preview"
-                class="sample__doc-each"></iframe>
-            </div>
-
-            <!-- esp -->
-            <div class="sample__doc-description">
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo front de sección para la creación de mensajes de alerta en toda la plataforma. Variables
-                entre tipo de usuario y nivel al que pertenecen.
-              </p>
-              <div>
-                <p class="text__blue">
-                  Características:
-                </p>
-                <ul>
-                  <li>
-                    Implementacion de llamados a api interna.
-                  </li>
-                  <li>
-                    Subsección con formulario para crear mensaje (asigna duración y perfil al que va dirigido).
-                  </li>
-                  <li>
-                    Subsección para visualizar mensajes y realizar acción de desactivación.
-                  </li>
-                </ul>
-              </div>
-              <p>
-                <span class="text__blue">Año: </span>
-                <span>2023</span>
-              </p>
-              <p>
-                <span class="text__blue">Tech: </span>
-                <span>Angular</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- sample demo users WIP-->
-        <div class="sample__each ">
-
-          <h2 class="sample__title">Creacion usuarios demo</h2>
-
-          <div class="sample__each-content">
-
-            <div class="sample__doc-container">
-              <iframe src="https://drive.google.com/file/d/19yAId5ds4_UJTR00w0iwU2PYOSvnPqJn/preview"
-                class="sample__doc-each"></iframe>
-            </div>
-
-            <!-- esp -->
-            <div class="sample__doc-description">
-              <p>
-                <span class="text__blue">Descripción: </span>
-                Desarrollo front para la creacion de usuarios.
-              </p>
-              <div>
-                <p class="text__blue">
-                  Características:
-                </p>
-                <ul>
-                  <li>
-                    Implementacion de llamados a api interna
-                  </li>
-                  <li>
-                    Subsección con formulario para crear usuarios.
-                  </li>
-                  <li>
-                    Subsección para visualizar tabla de usuarios creados.
-                  </li>
-                </ul>
-              </div>
-              <p>
-                <span class="text__blue">Año: </span>
-                <span>2021</span>
-              </p>
-              <p>
-                <span class="text__blue">Tech: </span>
-                <span>Angular</span>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
       </div>
 
     </div>

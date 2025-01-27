@@ -19,7 +19,7 @@ export class ViewComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log('saludo -> ', this.saludo);
+    // console.log('saludo -> ', this.saludo);
   }
 
   goToSamples() {
