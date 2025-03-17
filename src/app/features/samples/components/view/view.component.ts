@@ -20,7 +20,7 @@ export class ViewComponent implements OnInit {
       "features": [
         "Gráfico svg con JS.",
         "Implementación de llamados a api interna.",
-        "Descarga de archivo con extensión pdf.",
+        "Descarga de archivo con extensión pdf (jspdf-html2canvas). ",
         "Cantidad ilimitada de páginas e identificación de recursos no completados."
       ],
       "year": 2024,
